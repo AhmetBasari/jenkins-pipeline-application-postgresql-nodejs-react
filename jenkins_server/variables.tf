@@ -1,5 +1,5 @@
 variable "mykey" {
-  default = "clarus"
+  default = "firstkey"
 }
 
 variable "instancetype" {
