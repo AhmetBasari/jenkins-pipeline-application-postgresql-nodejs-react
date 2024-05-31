@@ -7,7 +7,7 @@
   tasks:
     - name: update all packages
       ansible.builtin.yum:
-        name: xxx.dkr.ecr.us-east-1.amazonaws.com/clarusway-repo/cw-todo-app:postgre
+        name: 699138899487.dkr.ecr.us-east-1.amazonaws.com/
         state: latest
 
     - name: Remove docker if installed from CentOS repo
@@ -83,7 +83,7 @@
   become: true
   vars:
     container_name: recep_postgre
-    image_name: xxx.dkr.ecr.us-east-1.amazonaws.com/clarusway-repo/cw-todo-app:postgre
+    image_name: 699138899487.dkr.ecr.us-east-1.amazonaws.com/
   tasks:
     - name: remove postgre container
       community.docker.docker_container:
@@ -113,7 +113,7 @@
   become: true
   vars:
     container_name: recep_nodejs
-    image_name: xxx.dkr.ecr.us-east-1.amazonaws.com/clarusway-repo/cw-todo-app:nodejs
+    image_name: 699138899487.dkr.ecr.us-east-1.amazonaws.com/
   tasks:
     - name: remove Nodejs container
       community.docker.docker_container:
@@ -139,7 +139,7 @@
   become: true
   vars:
     container_name: recep_react
-    image_name: xxx.dkr.ecr.us-east-1.amazonaws.com/clarusway-repo/cw-todo-app:react
+    image_name: 699138899487.dkr.ecr.us-east-1.amazonaws.com/
   tasks:
     - name: remove React container
       community.docker.docker_container:
