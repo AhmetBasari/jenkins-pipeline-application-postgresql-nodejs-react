@@ -3,11 +3,11 @@
   become: true
   vars:
     aws_region: us-east-1
-    ecr_registry: xxxx
+    ecr_registry: 699138899487.dkr.ecr.us-east-1.amazonaws.com/
   tasks:
     - name: update all packages
       ansible.builtin.yum:
-        name: 699138899487.dkr.ecr.us-east-1.amazonaws.com/
+        name: '*'
         state: latest
 
     - name: Remove docker if installed from CentOS repo
